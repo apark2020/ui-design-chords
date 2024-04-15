@@ -37,6 +37,9 @@ except Exception as e:
     print(f"An error occurred: {e}")
 
 
+@app.route('/')
+def display_homescreen():
+    return render_template('layout.html')
     
 @app.route('/quiz/<quiz_id>', methods=['GET', 'POST'])
 def quiz(quiz_id):

@@ -1,1 +1,9 @@
+/* Home screen */
+.welcome-header, .welcome-intro {
+  text-align: center;
+}
 
+.start-btn {
+  display: block;
+  margin: 70px auto 0;
+}
