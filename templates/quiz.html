@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script>
+    // Assuming you are using Flask to pass these variables to JavaScript
+    let quiz_data = {{ quiz_data|tojson }};
+    let question_data = {{ question_data|tojson }};
+
+    console.log(quiz_data);
+    console.log(question_data);
+
+    // Access the data for question "1" and prepare it for use in HTML
+
+    
+        let main_question = question_data.question.toString();
+        
+
+  
+    // Use DOM manipulation to set the content of elements when the document is ready
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.first-header').textContent = main_question;
+    });
+</script>
+
+
+<h2 class="first-header">Placeholder text will be replaced</h2>
+
+
+<ul id="question_list"></ul>
+
+<form id="quizForm">
+    <!-- Dynamic content will be inserted here by JavaScript -->
+    <button type="button" id="submitQuiz">Submit Quiz</button>
+</form>
+<div id="results"></div>
+
+</br>
+
+<div id="movement"></div>
+
+
+<script src="{{ url_for('static', filename='quiz.js') }}"></script>
+
+{% endblock %}
+

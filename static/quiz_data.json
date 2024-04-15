@@ -1,0 +1,87 @@
+{
+"1": {
+"id": "1",
+"type": "Interval",
+"true_answer": "Half-step",
+"user_answer": "",
+"correct": 0,
+"media": "/static/audio/minor2nd-2.mp3"},
+"2": {
+"id": "2",
+"type": "Interval",
+"true_answer": "Whole-step",
+"user_answer": "",
+"correct": 0,
+"media": "/static/audio/major2nd.mp3"},
+"3": {
+"id": "3",
+"type": "Interval",
+"true_answer": "Half-step",
+"user_answer": "",
+"correct": 0,
+"media": "/static/audio/minor2nd-1.mp3"},
+"4": {
+"id": "4",
+"type": "Chord",
+"true_answer": "Major",
+"user_answer": "",
+"correct": 0,
+"media": "/static/audio/major3-asc.mp3"},
+"5": {
+"id": "5",
+"type": "Chord",
+"true_answer": "Minor",
+"user_answer": "",
+"correct": 0,
+"media": "/static/audio/minor3-asc.mp3"},
+"6": {
+"id": "6",
+"type": "Chord",
+"true_answer": "Minor",
+"user_answer": "",
+"correct": 0,
+"media": "/static/audio/minor3-tog.mp3"},
+"7": {
+"id": "7",
+"type": "Chord",
+"true_answer": "Major",
+"user_answer": "",
+"correct": 0,
+"media": "/static/audio/major3-tog.mp3"},
+"8": {
+"id": "8",
+"type": "Chord Progression",
+"true_answer": "Doo Wop",
+"user_answer": "",
+"correct": 0,
+"media": "/static/audio/f-doo-wop.mp3"},
+"9": {
+"id": "9",
+"type": "Chord Progression",
+"true_answer": "2-5-1",
+"user_answer": "",
+"correct": 0,
+"media": "/static/audio/d-251.mp3"},
+"10": {
+"id": "10",
+"type": "Chord Progression",
+"true_answer": "2-5-1",
+"user_answer": "",
+"correct": 0,
+"media": "/static/audio/g-251.mp3"},
+"11": {
+"id": "11",
+"type": "Chord Progressions Part 2",
+"true_answer": "2-5-1",
+"user_answer": "",
+"correct": 0,
+"media": "https://www.youtube.com/embed/yebXcE6FIXw?si=iLomgNEkNxqJl6tJ"},
+"12": {
+"id": "12",
+"type": "Chord Progressions Part 2",
+"true_answer": "Doo Wop",
+"user_answer": "",
+"correct": 0,
+"media": "https://www.youtube.com/embed/OMOGaugKpzs?si=hCHnQpwz17s0zJmr"}
+}
+

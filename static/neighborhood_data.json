@@ -1,0 +1,128 @@
+{
+"1": {
+"id": "1",
+"title": "Gramercy",
+"boundary": ["South: 14th Street", "North:  23rd Street", "West: Park Avenue", "East: East River"],
+"summary": "Gramercy is a charming residential neighborhood situated in the heart of Manhattan. It is known for its beautiful tree-lined streets, historic architecture, and tranquil atmosphere. The neighborhood is anchored by Gramercy Park, a private green space open only to residents of the surrounding buildings. The park, designed by renowned architect Samuel Ruggles, is an oasis in the midst of the bustling city, with its lush foliage, stunning sculptures, and picturesque fountains. Gramercy is also home to numerous upscale restaurants, boutique shops, and cultural landmarks, including the Gramercy Theatre and the Players Club. The neighborhood attracts a diverse mix of residents, from students and young professionals to families and retirees, all drawn to its charm and convenience.",
+"image": "https://images.squarespace-cdn.com/content/v1/57154d604d088e8318875db8/1461866088418-Q3J4FZ2MJBJG0T9713FO/Gramercy?format=2500w",
+"population": 19006,
+"median income": 134584,
+"median age": 34,
+"east_west": "Eastside",
+"up_mid_down": "Midtown"
+},
+"2": {
+"id": "2",
+"title": "Alphabet City",
+"boundary": ["South: Houston Street", "North: East 14th Street", "West: Avenue A", "East: East River"],
+"summary": "Alphabet City is located between Houston Street and East 14th Street, to the south and north; Avenue A and the Hudson River, to the west and east. Over its history, it has been a densely populated home to immigrant populations from Germany, Poland and Puerto Rico. Today it is known for its community gardens and colorful street art and graffiti. Avenue C is also known as Loisaida Avenue - a stylized pronunciation of 'Lower East Side.'",
+"image":  "https://images.squarespace-cdn.com/content/v1/57154d604d088e8318875db8/1461019417600-WTQ1ZZMY6D61GW7FKD0N/image-asset.jpeg?format=2500w",
+"population": 35711,
+"median income": 46242,
+"median age": 38,
+"east_west": "Eastside",
+"up_mid_down": "Downtown"
+},
+"3": {
+"id": "3",
+"title": "Battery Park City",
+"boundary": ["South: Hudson River", "North: Hudson River/ Tribeca", "West: Hudson River", "East: West Street"],
+
+"summary": "Battery Park City is a long sliver of land, bordered by West Street, to the east, and the Hudson River to the south, west and north. Built, in part, on reclaimed land from dredging the World Trade Center site, this modern neighborhood is known for its high-rise apartments and lush, river view parks.",
+"image": "https://images.squarespace-cdn.com/content/v1/57154d604d088e8318875db8/1461192450081-HOBMSUVCV37VY8PN10OG/Battery+Park+City?format=2500w",
+"population": 10812,
+"median income": 214074,
+"median age": 42,
+"east_west": "Westside",
+"up_mid_down": "Downtown"
+},
+"4": {
+"id": "4",
+"title": "Bowery",
+"boundary": ["South: Hester Street", "North: East 4th Street", "West: Bowery avenue", "East: Allen Street"],
+"summary": "The Bowery is bordered by Hester Street to the south and East 4th Street to the north; Allen Street to the east and Bowery avenue to the west. It has a long, rough-and-tumble history. Once home to slums and flophouses, the area is now a haven for a mixture of street artists, working class housing, and industrial commerce, such as lighting and electrical accessories.",
+"image": "https://images.squarespace-cdn.com/content/v1/57154d604d088e8318875db8/1461019417600-WTQ1ZZMY6D61GW7FKD0N/image-asset.jpeg?format=2500w",
+"population":  16433,
+"median income": 55809,
+"median age": 40,
+"east_west": "Eastside",
+"up_mid_down": "Downtown"
+},
+"5": {
+"id": "5",
+"title": "Carnegie Hill",
+"boundary": ["South: East 86th street", "North: East 96th street", "West: Fifth Avenue", "East: Third Avenue"],
+"summary": "Often considered part of Manhattan's Upper East Side, Carnegie Hill is a quiet, affluent neighborhood located between East 86th and East 96th streets, Third Avenue and Fifth Avenue (Central Park). In fact, the neighborhood (along with neighboring Yorkville) is in such high demand that its ongoing development of high rises is pushing beyond what was once a very distinct border with Spanish Harlem at East 96th Street.",
+"image": "https://images.squarespace-cdn.com/content/v1/57154d604d088e8318875db8/1461380856493-09MRDIS6SBD7B1FXC778/image-asset.jpeg?format=2500w",
+"population": 45577,
+"median income": 131372,
+"median age": 42.1,
+"east_west": "Eastside",
+"up_mid_down": "Uptown"
+},
+"6": {
+"id": "6",
+"title": "Chelsea",
+"boundary": ["South: West 14th street", "North: West 30th street", "West: Hudson River", "East: Between Sixth and Seventh Avenues"],
+"summary": "Stretching from West 14th street to West 30th street, the Hudson River to Sixth and Seventh Avenues, Chelsea is one of the largest neighborhoods in Manhattan. Indeed, it can be broken down further into a Warehouse District, between 10th & 12th Avenues, which is home to art galleries. There's the Highline, with a number of restaurants and clubs. There are residential blocks and public housing.",
+"image": "https://images.squarespace-cdn.com/content/v1/57154d604d088e8318875db8/1461672233824-4NJF2L37LT1J37VL3GQD/image-asset.jpeg?format=2500w",
+"population": 51117,
+"median income": 120376,
+"median age": 39,
+"east_west": "Westside",
+"up_mid_down": "Midtown"
+},
+"7": {
+"id": "7",
+"title": "Chinatown",
+"boundary": ["South: Worth Street", "North: Grand Street", "West: Broadway", "East: East Broadway"],
+"summary": "Not only does Chinatown offer a wide variety of food markets (fish, vegetables, meats) and tourism shops, its atmosphere and scenery are unlike anything else in Manhattan. Of particular note is the 'Bloody Angle' of Doyers Street, between Pell Street and Bowery - a quiet throwback to the origins of this historic neighborhood.",
+"image":
+"https://images.squarespace-cdn.com/content/v1/57154d604d088e8318875db8/1461673090342-DF2AGG5BV1JPV3LLC53I/Chinatown?format=2500w",
+"population": 28657,
+"median income": 128763,
+"median age": 39.2,
+"east_west": "Eastside",
+"up_mid_down": "Downtown"
+},
+"8": {
+"id": "8",
+"title": "Civic Center",
+"boundary": ["South: Financial District", "North: Chinatown", "West: Tribeca", "East: South Street Seaport and the Two Bridges"],
+"summary": "Civic Center is a bustling and historically rich neighborhood in Manhattan. Known for its elegant courthouses, government offices, and law enforcement institutions, Civic Center is the hub of civic activity in New York City. The neighborhood is also home to a variety of cultural landmarks, such as the Woolworth Building and One Police Plaza, that reflect the area's architectural heritage. Additionally, Civic Center is a bustling commercial zone, complete with numerous shops, restaurants, and coffee shops that cater to the local residents and visitors alike. Its central location and diverse offerings make Civic Center a popular destination for both business and leisure, providing a unique glimpse into the heart of the city.",
+"image": "https://images.squarespace-cdn.com/content/v1/57154d604d088e8318875db8/1461673936703-UCXQO34AHCH9PQ1USONA/Civic+Center?format=2500w",
+
+"population": 6249,
+"median income": 174962,
+"median age": 35,
+"east_west": "Eastside",
+"up_mid_down": "Downtown"
+},
+"9": {
+"id": "9",
+"title": "East Harlem",
+"boundary": ["South: East 116th street", "North: Harlem River", "West: Fifth Avenue", "East: Harlem River"],
+"summary": "East Harlem is a vibrant and diverse neighborhood in Manhattan. Its lively streets are filled with a mix of Puerto Rican, Mexican, and African American owned businesses, such as Mexican eateries and bodegas. There is a rich cultural history present in the murals and street art decorating the neighborhood. The area also features ample green space, including Thomas Jefferson Park and the newly renovated Harlem River Esplanade. East Harlem is easily accessible by the 6 train and is a wonderful neighborhood to explore for those looking for a taste of authentic New York City living.",
+"image": "https://images.squarespace-cdn.com/content/v1/57154d604d088e8318875db8/1461798800599-W6YLH3A9T938ZOWT1YJI/East+Harlem?format=2500w",
+"population": 96381,
+"median income": 33901,
+"median age": 38.4,
+"east_west": "Eastside",
+"up_mid_down": "Uptown"
+},
+"10": {
+"id": "10",
+"title": "East Village",
+"boundary": ["South: East 4th street", "North: East 14th street", "West: Bowery/4th Avenue", "East: Avenue A"],
+"summary": "The East Village neighborhood in Manhattan is a vibrant and eclectic area with a rich history. Once known for its counterculture movement, the neighborhood has transformed over time into a hub for artists, musicians, and a diverse community of residents. Today, the East Village is filled with trendy coffee shops, boutique stores, and a vast array of restaurants and bars. One of the highlights of the neighborhood is Tompkins Square Park, a sprawling green space that hosts outdoor events and live music performances. Despite its popularity, the East Village has managed to maintain a sense of authenticity and character that makes it one of the most beloved neighborhoods in New York City.",
+"image":
+"https://images.squarespace-cdn.com/content/v1/57154d604d088e8318875db8/1461800214942-EJS2ATHRR74EHD9IH4H1/East+Village?format=2500w",
+"population": 66553,
+"median income": 107542,
+"median age": 34,
+"east_west": "Eastside",
+"up_mid_down": "Downtown"
+}
+}
+
+
