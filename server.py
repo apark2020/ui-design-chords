@@ -49,7 +49,7 @@ except Exception as e:
     print(f"An error occurred: {e}")
 
 try:
-    with open('static/solid_info.json', 'r') as file:
+    with open('static/solid.json', 'r') as file:
         solid_info = json.load(file)
 except json.JSONDecodeError as e:
     print(f"Error parsing JSON: {e}")
