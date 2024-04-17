@@ -95,6 +95,42 @@ function addMusic(){
     audio4.insertBefore(audioCol4,audio4.firstChild);
 }
 
+function reveal_move_options() {
+    let movementContainer = document.getElementById('movement');
+        movementContainer.innerHTML = '';  // Clear existing content
+    
+    let row = document.createElement('div');
+    row.className = 'row mb-3';
+    
+    // Previous button column
+    let previousCol = document.createElement('div');
+    previousCol.className = 'col-md-1';  // Taking half the row
+    let previousButton = document.createElement('button');
+    previousButton.textContent = data.previousText;
+    previousButton.onclick = function() {
+            window.location.href = data.previousPage; // Redirect to the next quiz
+        };
+    previousCol.appendChild(previousButton);
+    row.appendChild(previousCol);
+    
+    let spaceCol = document.createElement('div');
+    spaceCol.className = 'col-md-10';  // Taking half the row
+    row.appendChild(spaceCol);
+
+    // Next button column (You might not need the spaceCol if not used for anything specific)
+    let nextCol = document.createElement('div');
+    nextCol.className = 'col-md-1';  // Taking the other half of the row
+    let nextButton = document.createElement('button');
+    nextButton.textContent = data.nextText;
+    nextButton.onclick = function() {
+            window.location.href = data.nextPage; // Redirect to the next quiz
+        };
+    nextCol.appendChild(nextButton);
+    row.appendChild(nextCol);
+
+    document.getElementById('movement').appendChild(row);
+}
+
 function cycleNumerals(interval,ids){
     for (let counter=0; counter<interval.length; counter++){
         setTimeout(() => {
@@ -111,4 +147,5 @@ function changeColor(id_old,id_new){
 $(document).ready(function(){
     addAudios();
     addMusic();
+    reveal_move_options();
 })
