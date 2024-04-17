@@ -5,8 +5,8 @@
 "option_1": "Half-step",
 "option_2": "Whole-step",
 "question": "Identify whether this interval is a half step or a whole step",
-"next": "/quiz/2",
-"previous": "/quiz/4",
+"next": "/learn/2",
+"previous": "/learn/1",
 "next_text": "Learn Chords",
 "previous_text": "Back to Intervals"
 },
@@ -16,8 +16,8 @@
 "option_1": "Major",
 "option_2": "Minor",
 "question": "Identify whether these chords are major or minor",
-"next": "/quiz/3",
-"previous": "/quiz/1",
+"next": "/learn/4",
+"previous": "/quiz/3",
 "next_text": "Learn Chord Progressions",
 "previous_text": "Back to Chords"
 },
@@ -28,7 +28,7 @@
 "option_2": "2-5-1",
 "question": "Which chord progression is being played here (piano chords)",
 "next": "/quiz/4",
-"previous": "/quiz/2",
+"previous": "/learn/7",
 "next_text": "Chord Progressions Continued",
 "previous_text": "Back to Chord Progressions"
 },
