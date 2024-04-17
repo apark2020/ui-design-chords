@@ -22,7 +22,7 @@
         "music2audio":"/static/audio/timetogo.mp3",
         "music2intervals":[1700,3500,5000,6500,7500],
         "previousText":"Back to Chords",
-        "previousPage":"/learn/5",
+        "previousPage":"/learn/aside/5",
         "nextText":"Next Progression: 2-5-1's",
         "nextPage":"/learn/7"
     },
