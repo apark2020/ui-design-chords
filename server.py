@@ -58,6 +58,16 @@ except FileNotFoundError as e:
 except Exception as e:
     print(f"An error occurred: {e}")
 
+try:
+    with open('static/aside.json', 'r') as file:
+        aside_info = json.load(file)
+except json.JSONDecodeError as e:
+    print(f"Error parsing JSON: {e}")
+except FileNotFoundError as e:
+    print(f"JSON file not found: {e}")
+except Exception as e:
+    print(f"An error occurred: {e}")
+
 
 @app.route('/')
 def display_homescreen():
@@ -71,10 +81,16 @@ def learning(learn_id):
     else:
         data = solid_info.get(learn_id)
         if not data:
-            return "Not Found", 404
-        print(data)  # For debugging
-        return render_template('learn.html', data=data)
+            return "Content not found", 404
+        return render_template('learn.html', info=data)
 
+@app.route('/learn/aside/<learn_id>', methods=['GET'])
+def learning_aside(learn_id):
+    if learn_id in aside_info:
+        info = aside_info[learn_id]
+        return render_template('aside.html', info=info)
+    else:
+        return jsonify({"error": "Data not found"}), 404
 
     
 @app.route('/quiz/<quiz_id>', methods=['GET', 'POST'])

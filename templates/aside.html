@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 class="learn-title">{{ info.title }}</h2>
+
+<div class="aside-points">
+  <p>{{ info.point1 }}</p>
+  <p>{{ info.point2 }}</p>
+  <p>{{ info.point3 }}</p>
+</div>
+
+<div class="page-moves text-right">
+  <a class="btn btn-outline-primary previous" href="{{ info.previous }}">Previous</a>
+  <a class="btn btn-outline-primary next" href="{{ info.next }}">Next</a>
+</div>
+
+<script>
+  let info = {{ info | tojson | safe }};
+  console.log(info);
+</script>
+
+<script type="text/javascript" src="{{ url_for('static', filename='aside.js') }}"></script>
+
+{% endblock %}
