@@ -1,41 +1,40 @@
 document.addEventListener("DOMContentLoaded", function() {
-  function populateData(data) {
-    const titleElement = document.querySelector('.learn-title');
-    const pointsElement = document.querySelector('.points');
-    const subtopics = [document.querySelector('.subtopic1'), document.querySelector('.subtopic2')];
-    const previousButton = document.querySelector('.previous');
-    const nextButton = document.querySelector('.next');
+  // Log info object to console for debugging
+  console.log(info);
 
-    // Set title
-    titleElement.textContent = data.title;
+  // Dynamically set document title
+  document.title = info.title;
 
-    // Set points
-    pointsElement.innerHTML = `<li>${data.point1}</li><li>${data.point2}</li>`;
+  // Get all audio elements and images on the page
+ // Get all audio elements
+  var audioElements = document.querySelectorAll('audio');
 
-    // Set subtopics
-    subtopics.forEach((element, index) => {
-      const subtopicData = data[`subtopic${index + 1}`];
-      element.innerHTML = `<h3>${subtopicData.topic}</h3>`;
+  // Loop through all audio elements to make sure they can be played
+  audioElements.forEach(function(audio, index) {
+    // Load the audio file explicitly
+    audio.load();
 
-      // Add images
-      subtopicData.imgs.forEach(img => {
-        element.innerHTML += `<img src="${img}" alt="Image for ${subtopicData.topic}">`;
-      });
-
-      // Add audio
-      for (const [key, value] of Object.entries(subtopicData.audio)) {
-        element.innerHTML += `<audio controls><source src="${value}" type="audio/mpeg">${key}</audio>`;
-      }
+    // Add event listeners for play and error events
+    audio.addEventListener('play', function() {
+      console.log('Audio ' + (index + 1) + ' is playing.');
     });
+    audio.addEventListener('error', function(e) {
+      console.error('Error occurred while loading audio ' + (index + 1) + ':', e);
+    });
+  });
 
-    // Set previous and next buttons
-    previousButton.setAttribute('href', data.previous);
-    nextButton.setAttribute('href', data.next);
-  }
+  // Get all image elements
+  var imageElements = document.querySelectorAll('img');
 
-  if (window.data) {
-    populateData(window.data);
-  } else {
-    console.error('No data available');
-  }
+  // Loop through all image elements to confirm they are loaded
+  imageElements.forEach(function(img, index) {
+    // Add event listeners to check if images are loaded
+    img.addEventListener('load', function() {
+      console.log('Image ' + (index + 1) + ' is loaded.');
+    });
+    img.addEventListener('error', function(e) {
+      console.error('Error occurred while loading image ' + (index + 1) + ':', e);
+    });
+  });
+  
 });
