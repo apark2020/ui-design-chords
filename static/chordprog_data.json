@@ -1,0 +1,45 @@
+{
+ "pages":[
+    {
+        "id": "1",
+        "title": "Doo-Wop Changes",
+        "fact": "Also known as the '50s Chord Progression.",
+        "romans": "I-vi-V-IV",
+        "key1": "C Major",
+        "key1audio": "/static/audio/c-doo-wop.mp3",
+        "key2": "F Major",
+        "key2audio": "/static/audio/f-doo-wop.mp3",
+        "romnum1":"/static/images/roman1.svg",
+        "romnum2":"/static/images/roman6.svg",
+        "romnum3":"/static/images/roman5.svg",
+        "romnum4":"/static/images/roman4.svg",
+        "intervals1":[1450,2750,4050,5350,7050],
+        "intervals2":[1000,2300,3600,4900,6200],
+        "music1":"Stand by Me by Ben E. King",
+        "music1audio":"/static/audio/standbyme.mp3",
+        "music2":"it's time to go by Taylor Swift",
+        "music2audio":"/static/audio/timetogo.mp3"
+    },
+    {
+        "id": "2",
+        "title": "The 2-5-1",
+        "fact": "Very common in jazz tunes.",
+        "romans": "ii-V-I",
+        "key1": "D Major",
+        "key1audio": "/static/audio/d-251.mp3",
+        "key2": "G Major",
+        "key2audio": "/static/audio/g-251.mp3",
+        "romnum1":"/static/images/roman2.svg",
+        "romnum2":"/static/images/roman5.svg",
+        "romnum3":"/static/images/roman1.svg",
+        "intervals1":[1000,2300,3600,4900,6200],
+        "intervals2":[1000,2300,3600,4900,6200],
+        "music1":"Sunday Morning by Maroon 5",
+        "music1audio":"/static/audio/sundaymorning.mp3",
+        "music2":"Solar by Miles Davis",
+        "music2audio":"/static/audio/solar.mp3"
+
+    }
+]
+}
+

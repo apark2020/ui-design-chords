@@ -7,3 +7,41 @@
   display: block;
   margin: 70px auto 0;
 }
+
+.chord-progression-roman{
+  display:flex;
+}
+
+.roman-numeral{
+  text-align: center;
+  width: 70px;
+  margin-left:5px;
+  border: 1px solid black;
+}
+
+.roman-pic{
+  max-width: 550px;
+  max-height: 50px;
+  margin: auto;
+}
+
+
+.highlight-num{
+  background-color:rgba(184, 219, 255, 70%);
+}
+
+.key-audio{
+  display: flex;
+}
+
+.key-text{
+  padding-right:10px;
+}
+
+.prog-container-1{
+  margin-top:50px;
+}
+
+.prog-container-2{
+  margin-top:50px;
+}

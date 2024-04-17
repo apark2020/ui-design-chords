@@ -14,6 +14,8 @@ file_path = 'static/neighborhood_data.json'
 
 quiz_path = 'static/quiz_data.json'
 
+chordprog_path='static/chordprog_data.json'
+
 # Open and read the JSON file
 try:
     with open('static/quiz_data.json', 'r') as file:
@@ -36,6 +38,15 @@ except FileNotFoundError as e:
 except Exception as e:
     print(f"An error occurred: {e}")
 
+try:
+    with open('static/chordprog_data.json', 'r') as file:
+        chordprog_data = json.load(file)
+except json.JSONDecodeError as e:
+    print(f"Error parsing JSON: {e}")
+except FileNotFoundError as e:
+    print(f"JSON file not found: {e}")
+except Exception as e:
+    print(f"An error occurred: {e}")
 
 @app.route('/')
 def display_homescreen():
@@ -78,6 +89,11 @@ def update_quiz():
         return jsonify({"status": "success", "updated_records": len(updated_records)})
     else:
         return jsonify({"status": "error", "message": "Invalid data format received"}), 400
+
+@app.route('/learning/chord-progressions/<pageid>',methods=['GET','POST'])
+def chord_prog(pageid):
+    prog = chordprog_data["pages"][int(pageid)-1]
+    return render_template('learning_chord_prog.html',data=prog)
 
 
 

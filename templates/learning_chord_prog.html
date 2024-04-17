@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script>
+    let data = {{ data|tojson }};
+</script>
+  
+
+
+<h2 class="first-header">Chord Progression 1: {{ data.title }}</h2>
+
+<h4>{{ data.fact }}</h4>
+<h4>The progression is: {{ data.romans }}</h4>
+
+<div class="row prog-container-1">
+    <div class="col-md-5 chord-progression-roman">
+        <div class="roman-numeral" id="p1-one">
+            <img class="roman-pic" src={{data.romnum1}}>
+        </div>
+        <div class="roman-numeral" id="p1-two">
+            <img class="roman-pic" src={{data.romnum2}}>
+        </div>
+        <div class="roman-numeral" id="p1-three">
+            <img class="roman-pic" src={{data.romnum3}}>
+        </div>
+        <div class="roman-numeral" id="p1-four">
+            <img class="roman-pic" src={{data.romnum4}}>
+        </div>
+    </div>
+</div>
+
+<div class="row prog-container-2">
+    <div class="col-md-5 chord-progression-roman">
+        <div class="roman-numeral" id="p2-one">
+            <img class="roman-pic" src={{data.romnum1}}>
+        </div>
+        <div class="roman-numeral" id="p2-two">
+            <img class="roman-pic" src={{data.romnum2}}>
+        </div>
+        <div class="roman-numeral" id="p2-three">
+            <img class="roman-pic" src={{data.romnum3}}>
+        </div>
+        <div class="roman-numeral" id="p2-four">
+            <img class="roman-pic" src={{data.romnum4}}>
+        </div>
+    </div>
+</div>
+
+
+<script src="{{ url_for('static', filename='chordprog.js') }}"></script>
+
+{% endblock %}
