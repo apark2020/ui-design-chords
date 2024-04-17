@@ -69,11 +69,11 @@ def learning(learn_id):
         prog = chordprog_data["pages"][int(learn_id)-6]
         return render_template('learning_chord_prog.html',data=prog)
     else:
-        data = solid_info.get(learn_id)
-        if not data:
+        info = solid_info.get(learn_id)
+        if not info:
             return "Not Found", 404
-        print(data)  # For debugging
-        return render_template('learn.html', data=data)
+        print(info)  # For debugging
+        return render_template('learn.html', info=info)
 
 
     
