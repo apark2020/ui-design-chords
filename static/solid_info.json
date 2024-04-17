@@ -1,0 +1,96 @@
+{
+  "1": {
+    "id": "1",
+    "type": "main",
+    "title": "Precursor to chords: Intervals",
+    "previous": "/",
+    "next": "/quiz/1",
+    "point1": "Intervals refer to the distance between two notes; This distance affects how the two notes sound together.",
+    "point2": "Intervals are said to be made of a number of half and/or whole steps",
+    "subtopic1": {
+      "topic": "Half steps (aka minor seconds)",
+      "audio": {
+        "Listen": "/static/audio/minor2nd-1.mp3"
+      },
+      "imgs": [
+        "/static/assets/interval-half-blue.png", 
+        "/static/assets/interval-half-red.png"]
+    },
+    "subtopic2": {
+      "topic": "Whole steps (aka major seconds)",
+      "audio": {
+        "Listen": "/static/audio/major2nd.mp3"
+      },
+      "imgs": [
+        "/static/assets/interval-whole-blue.png", 
+        "/static/assets/interval-whole-red.png"]
+    }
+  },
+
+  "2": {
+    "id": "2",
+    "type": "main",
+    "title": "Chords",
+    "previous": "/quiz/1",
+    "next": "/learn/3",
+    "point1": "Chords are combinations of three (or four) notes with specific intervals between each note, which create a certain signature sound",
+    "point2": "Chords are created from a combination of two different intervals: Minor Thirds and Major Thirds",
+    "subtopic1": {
+      "topic": "A minor third consists of 3 half steps",
+      "audio": {
+        "Ascending": "/static/audio/minor3-asc.mp3", 
+        "together": "/static/audio/minor3-tog.mp3"},
+      "imgs": ["/static/assets/chords-minor.png"]
+    },
+    "subtopic2": {
+      "topic": "A major third consists of 4 half steps)",
+      "audio": {
+        "Ascending": "/static/audio/major3-asc.mp3", 
+        "together": "/static/audio/major3-tog.mp3"},
+      "imgs": ["/static/assets/chords-major.png"]
+    }
+  },
+
+  "3": {
+    "id": "3",
+    "type": "main",
+    "title": "Chords (Cont.)",
+    "previous": "/learn/2",
+    "next": "/quiz/2",
+    "point1": "There are four different types of chords: Major, Minor, Augmented, Diminished",
+    "point2": "We will mostly cover major & minor chords today",
+    "subtopic1": {
+      "topic": "Major chords are created from a major chord (in green), followed by a minor chord (in purple)",
+      "audio": {
+        "Ascending": "/static/audio/major3-asc.mp3", 
+        "together": "/static/audio/major3-tog.mp3"},
+      "imgs": ["/static/assets/chords-cont-major.png"]
+    },
+    "subtopic2": {
+      "topic": "Minor Chords are created from a minor chord (in purple), followed by a major chord (in green)",
+      "audio": {
+        "Ascending": "/static/audio/minor3-asc.mp3", 
+        "together": "/static/audio/minor3-tog.mp3"},
+      "imgs": ["/static/assets/chords-cont-minor.png"]
+    }
+  },
+
+  "4": {
+    "id": "4",
+    "type": "aside",
+    "title": "Quick aside: Keys",
+    "previous": "/quiz/2",
+    "next": "/learn/5",
+    "point1": "The key defines what scale underlies/defines the song",
+    "subpoint1": [
+      "For a note to be \"diatonic\" to a key means that the note belongs in the scale", 
+      "The first note of a key/scale is known as the \"root\""],
+    "point2": "There are two general types of Keys: Major and Minor",
+    "subpoint2": [
+      "Major scales are defined by the interval pattern of: W W H W W W H (Play)", 
+      "Minor scales are defined by the interval pattern of: W H W W H W W (Play)"],
+    "point3": "So why do keys matter in our learning?",
+    "subpoint3": [
+      "The same progression can sound slightly different based on the song's key—focus on the music's overall vibe/shape, rather than a direct 1-to-1 comparison"]
+  }
+}
