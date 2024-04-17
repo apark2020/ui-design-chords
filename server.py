@@ -81,7 +81,7 @@ def learning(learn_id):
     else:
         data = solid_info.get(learn_id)
         if not data:
-            return "Content not found", 404
+            return "Not Found", 404
         return render_template('learn.html', info=data)
 
 @app.route('/learn/aside/<learn_id>', methods=['GET'])
@@ -91,7 +91,6 @@ def learning_aside(learn_id):
         return render_template('aside.html', info=info)
     else:
         return jsonify({"error": "Data not found"}), 404
-
     
 @app.route('/quiz/<quiz_id>', methods=['GET', 'POST'])
 def quiz(quiz_id):

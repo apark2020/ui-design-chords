@@ -26,11 +26,11 @@
     "point": "Chords are combinations of three (or four) notes with specific intervals between each note, which create a certain signature sound. Chords are created from a combination of two different intervals: Minor Thirds and Major Thirds",
     
     "subtopic1": "A minor third consists of 3 half steps",
-    "audio1": "/static/audio/minor3-asc.mp3",
+    "audio1": "/static/audio/asc-minor-3rd.mp3",
     "img1": "/static/assets/chords-minor.png",
     
     "subtopic2": "A major third consists of 4 half steps",
-    "audio2": "/static/audio/major3-asc.mp3",
+    "audio2": "/static/audio/asc-major-3rd.mp3",
     "img2": "/static/assets/chords-major.png"
   },
 

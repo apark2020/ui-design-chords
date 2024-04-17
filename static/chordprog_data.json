@@ -20,7 +20,11 @@
         "music1intervals":[100,4500,8500,10500,13000],
         "music2":"it's time to go by Taylor Swift",
         "music2audio":"/static/audio/timetogo.mp3",
-        "music2intervals":[1700,3500,5000,6500,7500]
+        "music2intervals":[1700,3500,5000,6500,7500],
+        "previousText":"Back to Chords",
+        "previousPage":"/learn/5",
+        "nextText":"Next Progression: 2-5-1's",
+        "nextPage":"/learn/7"
     },
     {
         "id": "2",
@@ -41,8 +45,11 @@
         "music1intervals":[500,2000,3400,5800,5800],
         "music2":"Solar by Miles Davis",
         "music2audio":"/static/audio/solar.mp3",
-        "music2intervals":[200,1800,3250,4500,4500]
-
+        "music2intervals":[200,1800,3250,4500,4500],
+        "previousText":"Back to Doo-Wop changes",
+        "previousPage":"/learn/6",
+        "nextText":"Get quizzed on chord progressions",
+        "nextPage":"/quiz/3"
     }
 ]
 }
