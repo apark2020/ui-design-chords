@@ -36,10 +36,30 @@ except FileNotFoundError as e:
 except Exception as e:
     print(f"An error occurred: {e}")
 
+try:
+    with open('static/solid_info.json', 'r') as file:
+        solid_info = json.load(file)
+except json.JSONDecodeError as e:
+    print(f"Error parsing JSON: {e}")
+except FileNotFoundError as e:
+    print(f"JSON file not found: {e}")
+except Exception as e:
+    print(f"An error occurred: {e}")
+
 
 @app.route('/')
 def display_homescreen():
     return render_template('layout.html')
+
+@app.route('/learn/<learn_id>', methods=['GET'])
+def learning(learn_id):
+    data = solid_info.get(learn_id)
+    if not data:
+        return "Not Found", 404
+    print(data)  # For debugging
+    return render_template('learn.html', data=data)
+
+
     
 @app.route('/quiz/<quiz_id>', methods=['GET', 'POST'])
 def quiz(quiz_id):

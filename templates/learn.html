@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 class="learn-title">Title</h2> 
+
+
+<div class="row">
+  <div class="col-12">
+    <ul class="points">
+
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 subtopic1">
+    
+  </div>
+  <div class="col-md-6 subtopic2">
+   
+  </div>
+</div>
+
+<div class="page-moves text-right">
+  <a class="btn btn-outline-primary previous" href="#">Previous</a>
+  <a class="btn btn-outline-primary next" href="#">Next</a>
+
+</div>
+
+<script>
+  let data = {{ data | tojson | safe }};
+  console.log(data);
+</script>
+
+<script type="text/javascript" src="{{ url_for('static', filename='learn.js') }}"></script>
+
+{% endblock %}
