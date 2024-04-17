@@ -63,13 +63,17 @@ except Exception as e:
 def display_homescreen():
     return render_template('layout.html')
 
-@app.route('/learn/<learn_id>', methods=['GET'])
+@app.route('/learn/<learn_id>', methods=['GET','POST'])
 def learning(learn_id):
-    data = solid_info.get(learn_id)
-    if not data:
-        return "Not Found", 404
-    print(data)  # For debugging
-    return render_template('learn.html', data=data)
+    if (int(learn_id)>5):
+        prog = chordprog_data["pages"][int(learn_id)-6]
+        return render_template('learning_chord_prog.html',data=prog)
+    else:
+        data = solid_info.get(learn_id)
+        if not data:
+            return "Not Found", 404
+        print(data)  # For debugging
+        return render_template('learn.html', data=data)
 
 
     
@@ -111,10 +115,10 @@ def update_quiz():
     else:
         return jsonify({"status": "error", "message": "Invalid data format received"}), 400
 
-@app.route('/learning/chord-progressions/<pageid>',methods=['GET','POST'])
-def chord_prog(pageid):
-    prog = chordprog_data["pages"][int(pageid)-1]
-    return render_template('learning_chord_prog.html',data=prog)
+# @app.route('/learn/chord-progressions/<pageid>',methods=['GET','POST'])
+# def chord_prog(pageid):
+#     prog = chordprog_data["pages"][int(pageid)-1]
+#     return render_template('learning_chord_prog.html',data=prog)
 
 
 

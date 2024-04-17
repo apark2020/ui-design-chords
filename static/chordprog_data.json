@@ -11,14 +11,16 @@
         "key2audio": "/static/audio/f-doo-wop.mp3",
         "romnum1":"/static/images/roman1.svg",
         "romnum2":"/static/images/roman6.svg",
-        "romnum3":"/static/images/roman5.svg",
-        "romnum4":"/static/images/roman4.svg",
+        "romnum3":"/static/images/roman4.svg",
+        "romnum4":"/static/images/roman5.svg",
         "intervals1":[1450,2750,4050,5350,7050],
         "intervals2":[1000,2300,3600,4900,6200],
         "music1":"Stand by Me by Ben E. King",
         "music1audio":"/static/audio/standbyme.mp3",
+        "music1intervals":[100,4500,8500,10500,13000],
         "music2":"it's time to go by Taylor Swift",
-        "music2audio":"/static/audio/timetogo.mp3"
+        "music2audio":"/static/audio/timetogo.mp3",
+        "music2intervals":[1700,3500,5000,6500,7500]
     },
     {
         "id": "2",
@@ -35,9 +37,11 @@
         "intervals1":[1000,2300,3600,4900,6200],
         "intervals2":[1000,2300,3600,4900,6200],
         "music1":"Sunday Morning by Maroon 5",
-        "music1audio":"/static/audio/sundaymorning.mp3",
+        "music1audio":"/static/audio/sunday-morning.mp3",
+        "music1intervals":[500,2000,3400,5800,5800],
         "music2":"Solar by Miles Davis",
-        "music2audio":"/static/audio/solar.mp3"
+        "music2audio":"/static/audio/solar.mp3",
+        "music2intervals":[200,1800,3250,4500,4500]
 
     }
 ]
