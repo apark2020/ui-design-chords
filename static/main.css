@@ -1,11 +1,10 @@
 /* Home screen */
-<<<<<<< HEAD
 
 body{
   background-color: rgb(250, 249, 246);
 }
 .navbar{
-  background-color: #789DE5 !important;
+  background-color: rgb(249, 249, 250) !important;
   margin-bottom: 20px; 
 }
 
@@ -91,4 +90,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.subtopic1, .subtopic2 h3{
+  margin-top: 15px;
+}
+
+button{
+  background-color: #789DE5 !important;
+  border: 0 !important;
+  color: white;
 }

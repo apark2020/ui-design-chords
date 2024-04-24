@@ -124,6 +124,7 @@ function handleQuizSubmission() {
 
             if (!selectedOption) {
                 resultElement.textContent = 'Please answer all questions.';
+                resultElement.style.backgroundColor = 'rgb(242,158,56)'
                 allAnswered = false;
             } else {
                 const isCorrect = selectedOption.value === quiz_data[questionId].true_answer;
