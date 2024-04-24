@@ -131,6 +131,7 @@ function handleQuizSubmission() {
                 quiz_data[questionId].user_answer = selectedOption.value;
                 quiz_data[questionId].correct = isCorrect;
                 resultElement.textContent = isCorrect ? 'Correct' : 'Incorrect';
+                resultElement.style.backgroundColor = isCorrect ? '#75ba79' : '#f55853';
             }
         });
 

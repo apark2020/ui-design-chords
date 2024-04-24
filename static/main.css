@@ -1,4 +1,13 @@
 /* Home screen */
+
+body{
+  background-color: rgb(250, 249, 246);
+}
+.navbar{
+  background-color: #789DE5 !important;
+  margin-bottom: 20px; 
+}
+
 .welcome-header, .welcome-intro {
   text-align: center;
 }
@@ -17,6 +26,7 @@
   width: 70px;
   margin-left:5px;
   border: 1px solid black;
+  background-color: white;
 }
 
 .roman-pic{
@@ -27,7 +37,7 @@
 
 
 .highlight-num{
-  background-color:rgba(184, 219, 255, 70%);
+  background-color:rgba(189, 216, 255, 90%);
 }
 
 .key-audio{
@@ -35,23 +45,36 @@
 }
 
 .key-text{
-  padding-right:10px;
+  padding-right: 10px;
 }
 
 .prog-container-1{
-  margin-top:30px;
-  margin-bottom:20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .prog-container-2{
-  margin-top:30px;
-  margin-bottom:20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
+
 .prog-container-3{
-  margin-top:30px;
-  margin-bottom:20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
+
 .prog-container-4{
-  margin-top:30px;
-  margin-bottom:20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.first-header{
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+#result0, #result1, #result2, #result3{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
