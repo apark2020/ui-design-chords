@@ -1,6 +1,19 @@
 /* Home screen */
-.welcome-header, .welcome-intro {
+body {
+  background-color: rgb(248, 244, 232); 
+  font-family: 'Roboto', sans-serif; 
+}
+
+.welcome-header {
   text-align: center;
+  margin-top: 60px;
+  font-weight: bold;
+}
+
+.welcome-intro {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .start-btn {

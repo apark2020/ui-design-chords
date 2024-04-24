@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="data:,">
 
-<!-- jquery -->
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
+    <!-- Font: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
 
 
   </head>
@@ -29,15 +31,23 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/learn/1">Intervals</a>
+          <a class="nav-link" href="/learn/2">Chords</a>
+          <a class="nav-link" href="/learn/aside/4">Keys</a>
+          <a class="nav-link" href="/learn/aside/5">Chord Progressions</a>
+        </div>
+      </div>
     </div>
   </nav>
 
     <div class="container">   
         {% block content %}
-        <h3 class="welcome-header mt-3">Welcome!</h3>
-        <div class="welcome-intro my-2">Learn the basics of chord progressions.</div>
+        <h2 class="welcome-header">Chord Progressions</h2>
+        <div class="welcome-intro">Welcome! The goal of this website is to help you learn the basics of chords and two types of chord progression. After each learning section, take short quizzes to test your knowledge.</div>
         <a href="/learn/1">
-          <button type="button" class="btn btn-primary start-btn">Start</button>
+          <button type="button" class="btn btn-primary start-btn">Start Learning</button>
         </a>
         {% endblock %}
     </div>
