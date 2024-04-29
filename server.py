@@ -115,8 +115,15 @@ def quiz_summary():
     total_questions = len(quiz_data)
     correct_answers = sum(question['correct'] for question in quiz_data.values())
     
-    result_message = f"You got {correct_answers} out of {total_questions} questions correct."
-    return render_template('quiz_summary.html', result_message=result_message)
+    percentage = int(round((correct_answers / total_questions) * 100)) 
+    
+    
+    return render_template(
+        'quiz_summary.html',
+        total_questions=total_questions,
+        correct_answers=correct_answers,
+        percentage=percentage
+    )
     
 @app.route('/update-quiz', methods=['POST'])
 def update_quiz():
