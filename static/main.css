@@ -9,7 +9,8 @@ body{
 }
 
 body {
-  background-color: rgb(248, 244, 232); 
+  background-color: rgb(248, 244, 232);
+  background-color: #fce0d2; 
   font-family: 'Roboto', sans-serif;
 }
 
@@ -98,6 +99,7 @@ body {
 
 button{
   background-color: #789DE5 !important;
+  background-color: #4375ff !important;
   border: 0 !important;
   color: white;
 }
