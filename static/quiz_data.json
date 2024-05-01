@@ -75,13 +75,13 @@
 "true_answer": "2-5-1",
 "user_answer": "",
 "correct": 0,
-"media": "https://www.youtube.com/embed/yebXcE6FIXw?si=iLomgNEkNxqJl6tJ"},
+"media": "/static/audio/if_i_fell.mp3"},
 "12": {
 "id": "12",
 "type": "Chord Progressions Part 2",
 "true_answer": "Doo Wop",
 "user_answer": "",
 "correct": 0,
-"media": "https://www.youtube.com/embed/OMOGaugKpzs?si=hCHnQpwz17s0zJmr"}
+"media": "/static/audio/every_breath.mp3"}
 }
 

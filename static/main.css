@@ -104,8 +104,9 @@ button{
   color: white;
 }
 
-.large-font {
+.large-font-blue {
     font-size: 18px; /* Large font size */
+    color: #4375ff;
 }
 
 .quiz_results {
