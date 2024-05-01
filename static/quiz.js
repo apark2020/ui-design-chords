@@ -28,7 +28,11 @@ function createAndAppendLink(question, audioUrl, radioOptions) {
             // Create audio element for MP3
             mediaElement = document.createElement('audio');
             mediaElement.controls = true;
-            mediaElement.src = audioUrl; // Set the source of the audio file
+            //mediaElement.src = audioUrl; // Set the source of the audio file
+            let source = document.createElement('source');
+                source.src = audioUrl;
+                source.type = 'audio/mpeg';
+            mediaElement.appendChild(source);
         }
 
     
