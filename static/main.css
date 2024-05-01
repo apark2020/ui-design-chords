@@ -31,6 +31,12 @@ body {
   margin: 70px auto 0;
 }
 
+.subtopic1 img, .subtopic2 img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+
 .chord-progression-roman{
   display:flex;
 }
