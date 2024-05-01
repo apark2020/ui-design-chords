@@ -20,10 +20,15 @@
     <audio controls>
       <source src="{{ info.audio1 }}" type="audio/mp3">
     </audio>
-    {% else %}
-    {% for src in info.audio1 %}
+    {% elif info.audio1 is mapping %}
     <audio controls>
-      <source src="{{ src }}" type="audio/mp3">
+      <source src="{{ info.audio1.file }}" type="audio/mp3">
+    </audio>
+    {% elif info.audio1 is iterable %}
+    {% for audio in info.audio1 %}
+    <div class="audio-label">{{ audio.label }}</div>
+    <audio controls>
+      <source src="{{ audio.file }}" type="audio/mp3">
     </audio>
     {% endfor %}
     {% endif %}
@@ -36,10 +41,15 @@
     <audio controls>
       <source src="{{ info.audio2 }}" type="audio/mp3">
     </audio>
-    {% else %}
-    {% for src in info.audio2 %}
+    {% elif info.audio2 is mapping %}
     <audio controls>
-      <source src="{{ src }}" type="audio/mp3">
+      <source src="{{ info.audio2.file }}" type="audio/mp3">
+    </audio>
+    {% elif info.audio2 is iterable %}
+    {% for audio in info.audio2 %}
+    <div class="audio-label">{{ audio.label }}</div>
+    <audio controls>
+      <source src="{{ audio.file }}" type="audio/mp3">
     </audio>
     {% endfor %}
     {% endif %}

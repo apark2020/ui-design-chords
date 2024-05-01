@@ -5,7 +5,7 @@
     "title": "Precursor to chords: Intervals",
     "previous": "/",
     "next": "/quiz/1",
-    "point": "Intervals refer to the distance between two notes; This distance affects how the two notes sound together. Intervals are said to be made of a number of half and/or whole steps",
+    "point": "Intervals refer to the distance between two notes. This distance affects how the two notes sound together. Intervals are said to be made of a number of half and/or whole steps",
     "subtopic1": "Half steps (aka minor seconds)",
     "explanation1": "They are keys which are \"right next to each other\" on a piano/keyboard. Either 2 white/black keys (as shown in blue), or a white and a black key (as show in red)",
     "audio1": "/static/audio/minor2nd-1.mp3",
@@ -25,10 +25,16 @@
     "next": "/learn/3",
     "point": "Chords are combinations of three (or four) notes with specific intervals between each note, which create a certain signature sound. Chords are created from a combination of two different intervals: Minor Thirds and Major Thirds",
     "subtopic1": "A minor third consists of 3 half steps",
-    "audio1": ["/static/audio/asc-minor-3rd.mp3", "/static/audio/minor3-tog.mp3"],
+    "audio1": [
+      { "file": "/static/audio/asc-minor-3rd.mp3", "label": "Ascending" },
+      { "file": "/static/audio/minor3-tog.mp3", "label": "Together" }
+    ],
     "img1": "/static/assets/chords-minor.png",
     "subtopic2": "A major third consists of 4 half steps",
-    "audio2": ["/static/audio/asc-major-3rd.mp3", "/static/audio/major3-tog.mp3"],
+    "audio2": [
+      { "file": "/static/audio/asc-major-3rd.mp3", "label": "Ascending" },
+      { "file": "/static/audio/major3-tog.mp3", "label": "Together" }
+    ],
     "img2": "/static/assets/chords-major.png"
   },
 
@@ -40,10 +46,16 @@
     "next": "/quiz/2",
     "point": "There are four different types of chords: Major, Minor, Augmented, Diminished. We will mostly cover major & minor chords today",
     "subtopic1": "Major chords are created from a major chord (in green), followed by a minor chord (in purple)",
-    "audio1": ["/static/audio/major3-asc.mp3", "/static/audio/major3-tog.mp3"],
+    "audio1": [
+      { "file": "/static/audio/major3-asc.mp3", "label": "Ascending" },
+      { "file": "/static/audio/major3-tog.mp3", "label": "Together" }
+    ],
     "img1": "/static/assets/chords-cont-major.png",
     "subtopic2": "Minor Chords are created from a minor chord (in purple), followed by a major chord (in green)",
-    "audio2": ["/static/audio/minor3-asc.mp3", "/static/audio/minor3-tog.mp3"],
+    "audio2": [
+      { "file": "/static/audio/minor3-asc.mp3", "label": "Ascending" },
+      { "file": "/static/audio/minor3-tog.mp3", "label": "Together" }
+    ],
     "img2": "/static/assets/chords-cont-minor.png"
   },
 
