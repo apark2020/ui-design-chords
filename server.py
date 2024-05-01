@@ -27,7 +27,6 @@ except FileNotFoundError as e:
 except Exception as e:
     print(f"An error occurred: {e}")
     
-# Open and read the JSON file
 try:
     with open('static/question_data.json', 'r') as file:
         question_data = json.load(file)
@@ -48,19 +47,9 @@ except FileNotFoundError as e:
 except Exception as e:
     print(f"An error occurred: {e}")
 
-try:
-    with open('static/solid.json', 'r') as file:
-        solid_info = json.load(file)
-except json.JSONDecodeError as e:
-    print(f"Error parsing JSON: {e}")
-except FileNotFoundError as e:
-    print(f"JSON file not found: {e}")
-except Exception as e:
-    print(f"An error occurred: {e}")
-
-try:
-    with open('static/aside.json', 'r') as file:
-        aside_info = json.load(file)
+try: 							
+    with open('static/learning_data.json', 'r') as file:
+        learn_data = json.load(file)
 except json.JSONDecodeError as e:
     print(f"Error parsing JSON: {e}")
 except FileNotFoundError as e:
@@ -78,17 +67,15 @@ def learning(learn_id):
     if (int(learn_id)>5):
         prog = chordprog_data["pages"][int(learn_id)-6]
         return render_template('learning_chord_prog.html',data=prog)
-    else:
-        data = solid_info.get(learn_id)
-        if not data:
-            return "Not Found", 404
-        return render_template('learn.html', info=data)
-
-@app.route('/learn/aside/<learn_id>', methods=['GET'])
-def learning_aside(learn_id):
-    if learn_id in aside_info:
-        info = aside_info[learn_id]
-        return render_template('aside.html', info=info)
+    
+    if learn_id in learn_data:
+        data = learn_data[learn_id]
+        if data['type'] == 'main':
+            return render_template('learn.html', info=data)
+        elif data['type'] == 'aside':
+            return render_template('aside.html', info=data)
+        else:
+            return jsonify({"error": "Invalid data type"}), 400
     else:
         return jsonify({"error": "Data not found"}), 404
     
