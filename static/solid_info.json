@@ -5,7 +5,7 @@
     "title": "Precursor to chords: Intervals",
     "previous": "/",
     "next": "/quiz/1",
-    "point1": "Intervals refer to the distance between two notes; This distance affects how the two notes sound together.",
+    "point1": "Intervals refer to the distance between two notes. This distance affects how the two notes sound together.",
     "point2": "Intervals are said to be made of a number of half and/or whole steps",
     "subtopic1": {
       "topic": "Half steps (aka minor seconds)",
@@ -57,7 +57,7 @@
     "title": "Chords (Cont.)",
     "previous": "/learn/2",
     "next": "/quiz/2",
-    "point1": "There are four different types of chords: Major, Minor, Augmented, Diminished",
+    "point1": "There are four different types of chords: Major, Minor, Augmented, and Diminished",
     "point2": "We will mostly cover major & minor chords today",
     "subtopic1": {
       "topic": "Major chords are created from a major chord (in green), followed by a minor chord (in purple)",
