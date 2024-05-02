@@ -81,26 +81,31 @@ function reveal_move_options() {
         movementContainer.innerHTML = '';  // Clear existing content
     
     let row = document.createElement('div');
-    row.className = 'row mb-3';
+    row.className = 'row d-flex justify-content-between';
     
     // Previous button column
     let previousCol = document.createElement('div');
-    previousCol.className = 'col-md-1';  // Taking half the row
+    previousCol.className = 'col-auto ms-auto';  // Taking half the row
+    
     let previousButton = document.createElement('button');
     previousButton.textContent = question_data.previous_text;
+
+    
+    
+    
     previousButton.onclick = function() {
             window.location.href = question_data.previous; // Redirect to the next quiz
         };
     previousCol.appendChild(previousButton);
     row.appendChild(previousCol);
     
-    let spaceCol = document.createElement('div');
-    spaceCol.className = 'col-md-10';  // Taking half the row
-    row.appendChild(spaceCol);
+ //   let spaceCol = document.createElement('div');
+  //  spaceCol.className = 'col-md-10';  // Taking half the row
+   // row.appendChild(spaceCol);
 
     // Next button column (You might not need the spaceCol if not used for anything specific)
     let nextCol = document.createElement('div');
-    nextCol.className = 'col-md-1';  // Taking the other half of the row
+    nextCol.className = 'col-auto me-auto';  // Taking the other half of the row
     let nextButton = document.createElement('button');
     nextButton.textContent = question_data.next_text;
     nextButton.onclick = function() {
