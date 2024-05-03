@@ -114,13 +114,13 @@ button{
 }
 
 .large-font-blue {
-    font-size: 18px; /* Large font size */
+    font-size: 50px; /* Large font size */
     color: #4375ff;
 }
 
 .quiz_results {
     color: rgba(100, 100, 100);
-    text-decoration: underline; /* Underlined text */
+    /*text-decoration: underline; */
     font-size: 35px; /* Large font size */
 }
 
