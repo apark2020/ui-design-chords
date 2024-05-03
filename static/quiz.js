@@ -92,7 +92,6 @@ function reveal_move_options() {
 
     
     
-    
     previousButton.onclick = function() {
             window.location.href = question_data.previous; // Redirect to the next quiz
         };

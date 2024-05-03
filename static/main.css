@@ -105,13 +105,8 @@ body {
 
 button{
     display: inline-block;
-    height: 3em; /* Make sure this fits two lines with the given line-height */
-    line-height: 1.5em;
     vertical-align: middle;
     white-space: normal;
-    background-color: #f8f8f8;
-    min-width: 50px;
-    max-width: 175px;
   background-color: #4375ff !important;
   border: 0 !important;
   color: white;
