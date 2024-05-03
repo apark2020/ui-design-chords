@@ -36,6 +36,10 @@ body {
   height: auto; 
 }
 
+.learning-info {
+  margin-bottom: 15px;
+}
+
 
 .chord-progression-roman{
   display:flex;

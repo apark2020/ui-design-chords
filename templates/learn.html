@@ -2,9 +2,9 @@
 
 {% block content %}
 
-<h2 class="learn-title">{{ info.title }}</h2>
+<h2 class="learn-title"><strong>{{ info.title }}</strong></h2>
 
-<div class="row">
+<div class="row learning-info">
   <div class="col-12">
     <div class="points">
       {{ info.point }}
@@ -14,7 +14,7 @@
 
 <div class="row">
   <div class="col-md-6 subtopic1">
-    <h3>{{ info.subtopic1 }}</h3>
+    <h3><strong>{{ info.subtopic1 }}</strong></h3>
     <p>{{ info.explanation1 }}</p>
     {% if info.audio1 is string %}
     <audio controls>
@@ -35,7 +35,7 @@
     <img src="{{ info.img1 }}" alt="Image for {{ info.subtopic1 }}">
   </div>
   <div class="col-md-6 subtopic2">
-    <h3>{{ info.subtopic2 }}</h3>
+    <h3><strong>{{ info.subtopic2 }}</strong></h3>
     <p>{{ info.explanation2 }}</p>
     {% if info.audio2 is string %}
     <audio controls>
