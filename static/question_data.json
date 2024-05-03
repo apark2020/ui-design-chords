@@ -29,7 +29,7 @@
 "question": "Which chord progression is being played here?",
 "next": "/quiz/4",
 "previous": "/learn/7",
-"next_text": "Chord Progressions Continued",
+"next_text": "More Quiz Questions",
 "previous_text": "Back to Chord Progressions"
 },
 "4": {
@@ -41,7 +41,7 @@
 "next": "/quiz_summary",
 "previous": "/quiz/3",
 "next_text": "Check Quiz Results",
-"previous_text": "Back to Chord Progressions Continued"
+"previous_text": "Previous Quiz"
 }
 }
 
