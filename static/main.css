@@ -91,6 +91,7 @@ body {
 .first-header{
   margin-top: 15px;
   margin-bottom: 25px;
+  font-weight: bold;
 }
 
 #result0, #result1, #result2, #result3{

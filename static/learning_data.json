@@ -5,12 +5,12 @@
     "title": "Precursor to chords: Intervals",
     "previous": "/",
     "next": "/quiz/1",
-    "point": "Intervals refer to the distance between two notes. This distance affects how the two notes sound together. Intervals are said to be made of a number of half and/or whole steps",
+    "point": "Intervals refer to the distance between two notes. This distance affects how the two notes sound together. Intervals are said to be made of a number of half and/or whole steps.",
     "subtopic1": "Half steps (aka minor seconds)",
-    "explanation1": "They are keys which are \"right next to each other\" on a piano/keyboard. Either 2 white/black keys (as shown in blue), or a white and a black key (as show in red)",
+    "explanation1": "They are keys which are \"right next to each other\" on a piano/keyboard. Either 2 white/black keys (as shown in blue), or a white and a black key (as show in red).",
     "audio1": "/static/audio/minor2nd-1.mp3",
     "img1": "/static/assets/intervals-half.png",
-    "explanation2": "They are keys which are two keys apart on the keyboard. Either 2 white/black keys (as shown in blue), or a white and a black key (as show in red)",
+    "explanation2": "They are keys which are two keys apart on the keyboard. Either 2 white/black keys (as shown in blue), or a white and a black key (as show in red).",
     "subtopic2": "Whole steps (aka major seconds)",
     "audio2": "/static/audio/major2nd.mp3",
     "img2": "/static/assets/intervals-whole.png"
@@ -23,14 +23,14 @@
     "title": "Chords",
     "previous": "/quiz/1",
     "next": "/learn/3",
-    "point": "Chords are combinations of three (or four) notes with specific intervals between each note, which create a certain signature sound. Chords are created from a combination of two different intervals: Minor Thirds and Major Thirds",
-    "subtopic1": "A minor third consists of 3 half steps",
+    "point": "Chords are combinations of three (or four) notes with specific intervals between each note, which create a certain signature sound. Chords are created from a combination of two different intervals: Minor Thirds and Major Thirds.",
+    "subtopic1": "Minor Thirds consist of 3 half steps",
     "audio1": [
       { "file": "/static/audio/asc-minor-3rd.mp3", "label": "Ascending" },
       { "file": "/static/audio/minor3-tog.mp3", "label": "Together" }
     ],
     "img1": "/static/assets/chords-minor.png",
-    "subtopic2": "A major third consists of 4 half steps",
+    "subtopic2": "Major Thirds consist of 4 half steps",
     "audio2": [
       { "file": "/static/audio/asc-major-3rd.mp3", "label": "Ascending" },
       { "file": "/static/audio/major3-tog.mp3", "label": "Together" }
@@ -44,14 +44,14 @@
     "title": "Chords (Cont.)",
     "previous": "/learn/2",
     "next": "/quiz/2",
-    "point": "There are four different types of chords: Major, Minor, Augmented, Diminished. We will mostly cover major & minor chords today",
-    "subtopic1": "Major chords are created from a major chord (in green), followed by a minor chord (in purple)",
+    "point": "There are four different types of chords: Major, Minor, Augmented, and Diminished. We will mostly cover major & minor chords today.",
+    "subtopic1": "Major Chords are created from a major third (in green), followed by a minor third (in purple).",
     "audio1": [
       { "file": "/static/audio/major3-asc.mp3", "label": "Ascending" },
       { "file": "/static/audio/major3-tog.mp3", "label": "Together" }
     ],
     "img1": "/static/assets/chords-cont-major.png",
-    "subtopic2": "Minor Chords are created from a minor chord (in purple), followed by a major chord (in green)",
+    "subtopic2": "Minor Chords are created from a minor third (in purple), followed by a major third (in green).",
     "audio2": [
       { "file": "/static/audio/minor3-asc.mp3", "label": "Ascending" },
       { "file": "/static/audio/minor3-tog.mp3", "label": "Together" }
@@ -65,9 +65,9 @@
     "title": "Quick aside: Keys",
     "previous": "/quiz/2",
     "next": "/learn/5",
-    "point1": "The key defines what scale underlies/defines the song. For a note to be \"diatonic\" to a key means that the note belongs in the scale; The first note of a key/scale is known as the \"root\"",
-    "point2": "There are two general types of Keys: Major and Minor: Major scales are defined by the interval pattern of: W W H W W W H (Play); Minor scales are defined by the interval pattern of: W H W W H W W (Play)",
-    "point3": "So why do keys matter in our learning? The same progression can sound slightly different based on the song's key—focus on the music's overall vibe/shape, rather than a direct 1-to-1 comparison"
+    "point1": "There are two general types of Keys: Major and Minor. These keys are based on Major and Minor scales respectively. Major scales are defined by the interval pattern of: W W H W W W H. Minor scales are defined by the interval pattern of: W H W W H W W.",
+    "point2": "The key defines what scale underlies the song. The first note of a key/scale is known as the \"root\".",
+    "point3": "So why do keys matter in our learning? The key sets the context for interpretting a chord progression. As you will see a chord progression is like a series of steps and the key is what you are walking on."
   },
 
   "5": {
@@ -76,8 +76,8 @@
     "title": "Chord Progressions",
     "previous": "/learn/4",
     "next": "/learn/6",
-    "point1": "What are chord progressions? Chord progressions are a sequence of chords (commonly four chords) which define the sound of a song",
-    "point2": "How do we notate chord progressions",
-    "point3": "The root of the song's key is notated with the roman numeral for 1 (I), and this follows for all other notes (VII, or 7, notating the \"last\" note in the key's corresponding scales; Each note in the song's key has a corresponding chord—notated with lowercase if the chord is minor, and uppercase if the chord is major"
+    "point1": "What are chord progressions? Chord progressions are a sequence of chords (commonly four chords) which define the sound of a song.",
+    "point2": "How do we notate chord progressions? The root of the song's key is notated with the roman numeral for 1 (I), and this follows for all other notes (VII, or 7, notating the \"last\" note in the key's corresponding scale. For each of the seven notes in the song's key, the key further specifies whether a minor or major chord should be built from it. A lowercase number is used if the chord is minor, and an uppercase is used if the chord is major.",
+    "point3": " So in the end a key specifies 7 chords, and a chord progression specifies a sequence in which those chords should be played."
   }
 }
