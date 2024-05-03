@@ -10,6 +10,13 @@
   <p>{{ info.point3 }}</p>
 </div>
 
+
+{% if info.title == "Quick aside: Keys" %}
+<img src="https://wpe.hoffmanacademy.com/wp-content/uploads/2023/09/C-Major-Scale-1.jpg" alt="Image of C Major Scale" class="format-pic">
+{% else %}
+<img src="https://kandmmusicschool.com/wp-content/uploads/2023/11/3202.png" alt="Image of music notes" class="format-pic">
+{% endif %}
+    
 <div class="page-moves text-right">
   <a class="btn btn-outline-primary previous" href="{{ info.previous }}">Previous</a>
   <a class="btn btn-outline-primary next" href="{{ info.next }}">Next</a>
@@ -19,6 +26,9 @@
   let info = {{ info | tojson | safe }};
   console.log(info);
 </script>
+
+
+
 
 <script type="text/javascript" src="{{ url_for('static', filename='aside.js') }}"></script>
 

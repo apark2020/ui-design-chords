@@ -77,7 +77,7 @@
     "previous": "/learn/4",
     "next": "/learn/6",
     "point1": "What are chord progressions? Chord progressions are a sequence of chords (commonly four chords) which define the sound of a song.",
-    "point2": "How do we notate chord progressions? The root of the song's key is notated with the roman numeral for 1 (I), and this follows for all other notes (VII, or 7, notating the \"last\" note in the key's corresponding scale). For each of the seven notes in the song's key, the key further specifies whether a minor or major chord should be built from it. A lowercase number is used if the chord is minor, and an uppercase is used if the chord is major.",
-    "point3": " So in the end a key specifies 7 possible chords, and a chord progression specifies a sequence in which subset of those chords should be played."
+    "point2": "How do we notate chord progressions? The root of the song's key is notated with the roman numeral for 1 (I), and this follows for all other notes (VII, or 7, notating the \"last\" note in the key's corresponding scale). A lowercase number is used if the chord is minor, and an uppercase is used if the chord is major.",
+    "point3": " So in the end a key specifies 7 possible chords, and a chord progression specifies a sequence in which a subset of those chords should be played."
   }
 }

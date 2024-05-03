@@ -129,3 +129,9 @@ button{
     width: auto; /* Allow column to grow */
 }
 
+.format-pic{
+    display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%; /* Adjust width as needed */
+}
