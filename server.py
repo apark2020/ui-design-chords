@@ -7,14 +7,6 @@ import re
 
 app = Flask(__name__)
 
-current_id_records = 10
-
-# Path to your JSON file
-file_path = 'static/neighborhood_data.json'
-
-quiz_path = 'static/quiz_data.json'
-
-chordprog_path='static/chordprog_data.json'
 
 # Open and read the JSON file
 try:
@@ -123,12 +115,6 @@ def update_quiz():
         return jsonify({"status": "success", "updated_records": len(updated_records)})
     else:
         return jsonify({"status": "error", "message": "Invalid data format received"}), 400
-
-# @app.route('/learn/chord-progressions/<pageid>',methods=['GET','POST'])
-# def chord_prog(pageid):
-#     prog = chordprog_data["pages"][int(pageid)-1]
-#     return render_template('learning_chord_prog.html',data=prog)
-
 
 
     
