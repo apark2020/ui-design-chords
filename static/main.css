@@ -28,6 +28,20 @@ body {
 .start-btn {
   display: block;
   margin: 70px auto 0;
+  background-color: #4375ff; /* accent color */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.container a { /* Targets all <a> tags within elements with class "container" */
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Ensures the link text color matches the surrounding text or specified color */
 }
 
 .subtopic1 img, .subtopic2 img {
