@@ -47,6 +47,8 @@ body {
 .subtopic1 img, .subtopic2 img {
   max-width: 100%; 
   height: auto; 
+  /* display: block;    Makes the image a block element */
+  /* margin: 0 auto;    Centering */
 }
 
 .learning-info {
@@ -125,9 +127,10 @@ button{
     display: inline-block;
     vertical-align: middle;
     white-space: normal;
-  background-color: #4375ff !important;
-  border: 0 !important;
-  color: white;
+    background-color: #4375ff !important;
+    border: 0 !important;
+    color: white;
+    cursor: pointer;
 }
 
 .large-font-blue {
@@ -151,4 +154,12 @@ button{
                 margin-left: auto;
                 margin-right: auto;
                 width: 50%; /* Adjust width as needed */
+}
+
+.text-green {
+  color: green;
+}
+
+.text-purple {
+  color: purple;
 }
