@@ -2,11 +2,11 @@
 
 {% block content %}
 
-<h1> <strong> Congratulations on Completing the Quiz!</strong> </h1>
+<h1> <strong> Congratulations on completing the Quiz!</strong> </h1>
 <br>
 <br>
 <p class="quiz_results">
-    You Scored <span class="large-font-blue">{{ percentage|round|int }}%</span>
+    You scored <span class="large-font-blue">{{correct_answers}}/{{total_questions}}</span>, or <span class="large-font-blue">{{ percentage|round|int }}%</span>, on the quiz!
 </p>
 
 

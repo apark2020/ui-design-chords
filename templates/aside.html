@@ -5,9 +5,9 @@
   <h2 class="learn-title"> <strong>{{ info.title }}</strong> </h2>
 
   <div class="aside-points">
-    <p>{{ info.point1 }}</p>
-    <p>{{ info.point2 }}</p>
-    <p>{{ info.point3 }}</p>
+    <p>{{ info.point1 | replace("What are chord progressions?", "<b>What are chord progressions?</b>") | safe}}</p>
+    <p>{{ info.point2 | replace('How do we notate chord progressions?', '<b>How do we notate chord progressions?</b>') | replace('For example, if the song','</p><p> For example, if the song') | safe}}</p>
+    <p>{{ info.point3 | replace('So why do keys matter in our learning?','<b>So why do keys matter in our learning?</b>') | safe}}</p>
   </div>
 
 

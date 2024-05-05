@@ -15,6 +15,7 @@ function createAndAppendLink(question, audioUrl, radioOptions) {
     let audioCol = document.createElement('div');
     audioCol.className = 'col-md-5';
     
+
     if (audioUrl.includes("youtube.com") || audioUrl.includes("youtu.be")) {
             // Create iframe for YouTube video
             mediaElement = document.createElement('iframe');
@@ -34,9 +35,15 @@ function createAndAppendLink(question, audioUrl, radioOptions) {
                 source.type = 'audio/mpeg';
             mediaElement.appendChild(source);
         }
-
     
-    audioCol.appendChild(mediaElement);
+        audioCol.appendChild(mediaElement);
+
+        if(quiz_id >= 4){
+            hintElement=document.createElement('div');
+            hintElement.textContent=quiz_data[question.id]["hint"]
+            audioCol.appendChild(hintElement);
+        }
+   
     
 
     row.appendChild(audioCol);

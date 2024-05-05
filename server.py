@@ -65,11 +65,11 @@ def learning(learn_id):
         if data['type'] == 'main':
             return render_template('learn.html', info=data)
         elif data['type'] == 'aside':
-            return render_template('aside.html', info=data)
+            return render_template('aside.html', info=data,learn_id=learn_id)
         else:
             return jsonify({"error": "Invalid data type"}), 400
     else:
-        return jsonify({"error": "Data not found"}), 404
+        return jsonify({"error": "Data not found"}) , 404
     
 @app.route('/quiz/<quiz_id>', methods=['GET', 'POST'])
 def quiz(quiz_id):
@@ -87,7 +87,7 @@ def quiz(quiz_id):
         if question_type_filter == record["type"]:
             matching_type_quiz.append(record)
 
-    return render_template('quiz.html', quiz_data=matching_type_quiz, question_data=matching_type_questions)
+    return render_template('quiz.html', quiz_data=matching_type_quiz, question_data=matching_type_questions,quiz_id=quiz_id)
     
 @app.route('/quiz_summary')
 def quiz_summary():

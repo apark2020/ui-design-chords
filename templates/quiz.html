@@ -6,6 +6,7 @@
     // Assuming you are using Flask to pass these variables to JavaScript
     let quiz_data = {{ quiz_data|tojson }};
     let question_data = {{ question_data|tojson }};
+    let quiz_id = {{ quiz_id|tojson }};
 
     console.log(quiz_data);
     console.log(question_data);

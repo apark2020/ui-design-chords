@@ -3,6 +3,11 @@ const ids2=["#p2-four","#p2-one","#p2-two","#p2-three","#p2-four",""]
 const ids3=["#p3-four","#p3-one","#p3-two","#p3-three","#p3-four",""]
 const ids4=["#p4-four","#p4-one","#p4-two","#p4-three","#p4-four",""]
 
+var timeoutOne = [];
+var timeoutTwo = [];
+var timeoutThree = [];
+var timeoutFour = [];
+
 function addAudios(){
     let audio1 = document.getElementsByClassName("prog-container-1")[0]
 
@@ -18,7 +23,20 @@ function addAudios(){
     mediaElement1.className= 'example1'
     mediaElement1.controls = true;
     mediaElement1.src = data.key1audio; // Set the source of the audio file
-    mediaElement1.addEventListener('play',function(){cycleNumerals(data.intervals1,ids1)});
+    mediaElement1.addEventListener('play',function(){
+        cycleNumerals(data.intervals1,ids1,timeoutOne);
+    });
+    mediaElement1.addEventListener('pause',function(){
+        console.log("paused");
+        for (let e=0; e<timeoutOne.length; e++){
+            clearTimeout(timeoutOne[e]);
+        }
+        for (let j=0; j<ids1.length; j++){
+            $( ids1[j] ).removeClass( "highlight-num" );
+        }
+        timeoutOne=[];
+        mediaElement1.currentTime=0;
+    });
     // mediaElement1.onplay=cycleNumerals(data.intervals1,1);
 
     audioCol1.appendChild(textElement1);
@@ -40,8 +58,18 @@ function addAudios(){
     mediaElement2.className= 'example2'
     mediaElement2.controls = true;
     mediaElement2.src = data.key2audio; // Set the source of the audio file
-    mediaElement2.addEventListener('play',function(){cycleNumerals(data.intervals2,ids2)});
-    // mediaElement2.onplay=cycleNumerals(data.intervals2,2);
+    mediaElement2.addEventListener('play',function(){cycleNumerals(data.intervals2,ids2,timeoutTwo)});
+    mediaElement2.addEventListener('pause',function(){
+        console.log("paused");
+        for (let e=0; e<timeoutTwo.length; e++){
+            clearTimeout(timeoutTwo[e]);
+        }
+        for (let j=0; j<ids2.length; j++){
+            $( ids2[j] ).removeClass( "highlight-num" );
+        }
+        timeoutTwo=[];
+        mediaElement2.currentTime=0;
+    });
 
     audioCol2.appendChild(textElement2);
     audioCol2.appendChild(mediaElement2);
@@ -64,8 +92,18 @@ function addMusic(){
     mediaElement3.className= 'example3'
     mediaElement3.controls = true;
     mediaElement3.src = data.music1audio; // Set the source of the audio file
-    mediaElement3.addEventListener('play',function(){cycleNumerals(data.music1intervals,ids3)});
-    // mediaElement1.onplay=cycleNumerals(data.intervals1,1);
+    mediaElement3.addEventListener('play',function(){cycleNumerals(data.music1intervals,ids3,timeoutThree)});
+    mediaElement3.addEventListener('pause',function(){
+        console.log("paused");
+        for (let e=0; e<timeoutThree.length; e++){
+            clearTimeout(timeoutThree[e]);
+        }
+        for (let j=0; j<ids3.length; j++){
+            $( ids3[j] ).removeClass( "highlight-num" );
+        }
+        timeoutThree=[];
+        mediaElement3.currentTime=0;
+    });
 
     audioCol3.appendChild(textElement3);
     audioCol3.appendChild(mediaElement3);
@@ -86,8 +124,18 @@ function addMusic(){
     mediaElement4.className= 'example4'
     mediaElement4.controls = true;
     mediaElement4.src = data.music2audio; // Set the source of the audio file
-    mediaElement4.addEventListener('play',function(){cycleNumerals(data.music2intervals,ids4)});
-    // mediaElement1.onplay=cycleNumerals(data.intervals1,1);
+    mediaElement4.addEventListener('play',function(){cycleNumerals(data.music2intervals,ids4,timeoutFour)});
+    mediaElement4.addEventListener('pause',function(){
+        console.log("paused");
+        for (let e=0; e<timeoutFour.length; e++){
+            clearTimeout(timeoutFour[e]);
+        }
+        for (let j=0; j<ids4.length; j++){
+            $( ids4[j] ).removeClass( "highlight-num" );
+        }
+        timeoutFour=[];
+        mediaElement4.currentTime=0;
+    });
 
     audioCol4.appendChild(textElement4);
     audioCol4.appendChild(mediaElement4);
@@ -131,9 +179,9 @@ function reveal_move_options() {
     document.getElementById('movement').appendChild(row);
 }
 
-function cycleNumerals(interval,ids){
+function cycleNumerals(interval,ids,timeout){
     for (let counter=0; counter<interval.length; counter++){
-        setTimeout(() => {
+        timeout[counter]=setTimeout(() => {
             changeColor(ids[counter],ids[counter+1])
             },interval[counter]);
     }
