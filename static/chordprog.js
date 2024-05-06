@@ -145,39 +145,48 @@ function addMusic(){
 
 function reveal_move_options() {
     let movementContainer = document.getElementById('movement');
-        movementContainer.innerHTML = '';  // Clear existing content
+    movementContainer.innerHTML = '';  // Clear existing content
     
     let row = document.createElement('div');
-    row.className = 'row mb-3';
-    
+    row.className = 'row d-flex justify-content-between';
+    row.style.marginTop = '10px'; // Add spacing
+
     // Previous button column
     let previousCol = document.createElement('div');
-    previousCol.className = 'col-md-1';  // Taking half the row
+    previousCol.className = 'col-auto ms-auto';
+
     let previousButton = document.createElement('button');
     previousButton.textContent = data.previousText;
+    previousButton.style.whiteSpace = 'nowrap';  // Prevent text wrapping
+    previousButton.style.overflow = 'hidden';    // Hide overflow text
+    previousButton.style.textOverflow = 'ellipsis';  // Show ellipsis if text overflows
     previousButton.onclick = function() {
-            window.location.href = data.previousPage; // Redirect to the next quiz
-        };
+        window.location.href = data.previousPage; // Redirect to previous page
+    };
     previousCol.appendChild(previousButton);
     row.appendChild(previousCol);
     
-    let spaceCol = document.createElement('div');
-    spaceCol.className = 'col-md-10';  // Taking half the row
-    row.appendChild(spaceCol);
+    // let spaceCol = document.createElement('div');
+    // spaceCol.className = 'col-md-10';  // Spacer column
+    // row.appendChild(spaceCol);
 
-    // Next button column (You might not need the spaceCol if not used for anything specific)
+    // Next button column
     let nextCol = document.createElement('div');
-    nextCol.className = 'col-md-1';  // Taking the other half of the row
+    nextCol.className = 'col-auto me-auto'; 
+
     let nextButton = document.createElement('button');
     nextButton.textContent = data.nextText;
+    nextButton.style.whiteSpace = 'nowrap';
+    nextButton.style.overflow = 'hidden';
+    nextButton.style.textOverflow = 'ellipsis';
     nextButton.onclick = function() {
-            window.location.href = data.nextPage; // Redirect to the next quiz
-        };
+        window.location.href = data.nextPage; // Redirect to the next page
+    };
     nextCol.appendChild(nextButton);
     row.appendChild(nextCol);
 
-    document.getElementById('movement').appendChild(row);
-}
+    movementContainer.appendChild(row);
+  }
 
 function cycleNumerals(interval,ids,timeout){
     for (let counter=0; counter<interval.length; counter++){
