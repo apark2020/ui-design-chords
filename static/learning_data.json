@@ -93,6 +93,6 @@
     "nextText": "Chord Progression: Doo-Wop Changes",
     "point1": "What are chord progressions? Chord progressions are a sequence of chords (commonly three or four chords) which define the sound of a song.",
     "point2": "How do we notate chord progressions? The root of the song's key is notated with the roman numeral for 1 (I), and this follows for all other notes (VII, or 7, notating the \"last\" note in the key's corresponding scale). A lowercase number is used if the chord is minor, and an uppercase is used if the chord is major. For example, if the song is in the key of C major, in which the notes of the corresponding C major scale are in the order of C D E F G A B, a C chord would be notated with I, a D chord with II, an E chord with III, a F chord with IV, an G chord with V, an A chord with VI, and a B chord with VII.",
-    "point3": " In sum, the key specifies which notes correspond to, and a chord progression specifies a sequence in which a subset of those chords should be played."
+    "point3": " In sum, the key specifies which notes correspond to which roman numeral (which dictates the type of chord), and a chord progression specifies a sequence in which a subset of those chords should be played."
   }
 }
